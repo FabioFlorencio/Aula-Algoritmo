@@ -1,0 +1,32 @@
+algoritmo "JOGO_CASO_02_PARTIDA_DE_FUT"
+
+var
+   B,M,DIF:INTEIRO
+
+inicio
+   ESCREVAL("  BANGU X MADUREIRA  ")
+   ESCREVAL("--------------------")
+   ESCREVA("QUANTOS GOLS DO BANGU?")
+   LEIA(B)
+   ESCREVA("QUANTOS GOLS DO MADUREIRA?")
+   LEIA(M)
+   SE(B>M)ENTAO
+      DIF<- B-M
+   SENÃO(M>B)ENTAO
+      DIF<- M-B
+   FIMSE
+   ESCREVAL("--------------------")
+   ESCREVAL("DIFERENÇA:",DIF)
+   ESCOLHA(DIF)
+   CASO 0
+      ESCREVAL("STATUS PARTIDA:EMPATE")
+   CASO 1,2,3
+      ESCREVAL("STATUS PARTIDA:NORMAL")
+   OUTROCASO
+      ESCREVAL("STATUS PARTIDA:GOLEADA")
+   FIMESCOLHA
+
+
+
+
+fimalgoritmo

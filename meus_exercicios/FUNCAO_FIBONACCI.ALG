@@ -1,0 +1,23 @@
+algoritmo "FUNCAO_FIBONACCI"
+var
+AUX,N1,N2,C,R:INTEIRO
+
+FUNCAO FIBONACCI(var T1,T2:INTEIRO):INTEIRO
+INICIO
+   AUX<-T1+T2
+   ESCREVA(AUX)
+   T1<-T2
+   T2<-AUX
+
+FIMFUNCAO
+
+inicio
+   N1<-0
+   N2<-1
+   ESCREVA(N1)
+   ESCREVA(N2)
+   PARA C DE 1 ATE 9 FACA
+      R<-FIBONACCI(N1,N2)
+   FIMPARA
+
+fimalgoritmo

@@ -1,0 +1,17 @@
+algoritmo "FATORIAL"
+
+var
+N,FATORIAL,CONT:INTEIRO
+
+inicio
+      ESCREVA("DIGITE UM NUMERO:")
+      LEIA(N)
+      CONT<-N
+      FATORIAL <-1
+      REPITA
+         FATORIAL<-FATORIAL*CONT
+         CONT<-CONT-1
+      ATE(CONT<1)
+      ESCREVAL("O VALOR DE FATORIAL DE",N," E IGUAL A",FATORIAL)
+
+fimalgoritmo

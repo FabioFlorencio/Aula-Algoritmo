@@ -1,0 +1,17 @@
+algoritmo "REPITA_AULA10_GUANABARA"
+
+var
+N,SOMA:REAL
+RESP:CARACTERE
+
+inicio
+      REPITA
+         ESCREVA("DIGITE UM NUMERO:")
+         LEIA(N)
+         SOMA<-SOMA+N
+         ESCREVAL("VOCÊ QUER CONTINUAR?[S/N]")
+         LEIA(RESP)
+      ATE(RESP="N")
+      ESCREVAL("A SOMA DE TODOS OS VALORES DIGITADOS:",SOMA)
+
+fimalgoritmo

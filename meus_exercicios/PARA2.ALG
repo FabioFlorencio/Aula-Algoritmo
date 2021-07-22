@@ -1,0 +1,12 @@
+algoritmo "PARA2"
+
+var
+   C:INTEIRO
+
+inicio
+   //EXEMPLO DE CONTAGEM PULLANDO NUMERO
+   PARA C <-1 ATE 10 PASSO 2 FACA
+      ESCREVAL(C)
+   FIMPARA
+
+fimalgoritmo

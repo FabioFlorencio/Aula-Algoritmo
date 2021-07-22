@@ -1,0 +1,22 @@
+algoritmo "FUNCAO3"
+var
+   N,F,C:INTEIRO
+   
+FUNCAO FATORIAL(V:INTEIRO):INTEIRO
+var
+   R,C:INTEIRO
+INICIO
+   R<-1
+   PARA C DE 1 ATE V FACA
+      R<-R*C
+   FIMPARA
+   RETORNE R
+FIMFUNCAO
+   
+inicio
+   ESCREVAL("DIGITE UM NUMERO")
+   LEIA(N)
+   F<-FATORIAL(N)
+   ESCREVAL("O VALOR DE ",N,"! E IGUAL A",F)
+
+fimalgoritmo

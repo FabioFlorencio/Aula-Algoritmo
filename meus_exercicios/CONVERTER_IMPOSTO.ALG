@@ -1,0 +1,19 @@
+algoritmo "semnome"
+
+var
+
+VL,JR,VT,PARC_MES:REAL
+PAR:INTEIRO
+
+inicio
+      JR <- VL*20
+      VT <- JR+VL
+      PARC_MES <- VT / PAR
+      ESCREVAL("QUAL É O VALOR DO IMPRESTIMO ? R$")
+      LEIA(VL)
+      ESCREVAL("EM QUANTAS PARCELAS VOCÊ GOSTARIA DE PAGAR ? ")
+      lEIA(PAR)
+      ESCREVAL("VALOR TOTAL DO EMPRESTIMO:R$",VT)
+      ESCREVAL("VALOR POR PARCELA SERÁ:R$",PARC_MES)
+      
+fimalgoritmo

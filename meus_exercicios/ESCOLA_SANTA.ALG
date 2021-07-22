@@ -1,0 +1,38 @@
+algoritmo "ESCOLA_SANTA"
+
+var
+   Q,SOMA,CONT:INTEIRO
+   NOTA,MAIOR,MENOR:REAL
+   ALUNO,MELHOR,PIOR:CARACTERE
+
+inicio
+   ESCREVAL("------------------------")
+   ESCREVAL("ESCOLA SANTA PACIÊNCIA")
+   ESCREVAL("------------------------")
+   ESCREVA("QUANTOS ALUNOS A TURMA TEM?")
+   LEIA(Q)
+   CONT<-0
+   ENQUANTO (CONT<Q)FACA
+      CONT<- CONT+1
+      ESCREVAL("------------------------")
+      ESCREVAL("ALUNO",CONT)
+      ESCREVA("NOME DO ALUNO:")
+      LEIA(ALUNO)
+      ESCREVA("NOTA DO ALUNO:")
+      LEIA(NOTA)
+      SE (CONT=1)ENTAO
+      MENOR<-NOTA
+      FIMSE
+      SE (NOTA>MAIOR)ENTAO
+          MAIOR<-NOTA
+          MELHOR<-ALUNO
+      FIMSE
+      SE (NOTA<MAIOR)ENTAO
+          MENOR<- NOTA
+          PIOR<- ALUNO
+      FIMSE
+   FIMENQUANTO
+   ESCREVAL("O MELHOR APROVEITAMENTO FOI DE ",MELHOR," COM A NOTA",MAIOR)
+   ESCREVAL("O PIOR APROVEITAMENTO FOI DE" ,PIOR," COM A NOTA",MENOR)
+
+fimalgoritmo

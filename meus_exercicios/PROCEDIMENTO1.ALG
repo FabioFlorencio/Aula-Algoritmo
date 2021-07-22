@@ -1,0 +1,17 @@
+algoritmo "PROCEDIMENTO1"
+var
+   N:INTEIRO
+PROCEDIMENTO ParOuImpar(V: INTEIRO)
+INICIO
+   SE (N%2=0) ENTAO
+      ESCREVAL("O NUMERO",V," E PAR")
+   SENAO
+      ESCREVAL("O NUMERO",V," E IMPAR" )
+   FIMSE
+FIMPROCEDIMENTO
+inicio
+   ESCREVAL("DIGITE UM NUMERO")
+   LEIA(N)
+   ParOuImpar(N)
+
+fimalgoritmo

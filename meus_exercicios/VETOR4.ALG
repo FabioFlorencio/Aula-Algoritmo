@@ -1,0 +1,20 @@
+algoritmo "VETOR4"
+var
+   NOME:CARACTERE
+   soC:VETOR[1..5] DE CARACTERE
+   C,TOT:INTEIRO
+inicio
+   PARA C DE 1 ATE 5 FACA
+      ESCREVAL("DIGITE SEU NOME")
+      LEIA(NOME)
+      SE (COPIA(MAIUSC(NOME),1,1)="C")ENTAO
+         TOT<-TOT+1
+         soC[TOT]<- NOME
+      FIMSE
+   FIMPARA
+   LIMPATELA
+   ESCREVAL("LISTAGEM FINAL")
+   PARA C DE 1 ATE TOT FACA
+      ESCREVAL(soC[C])
+   FIMPARA
+fimalgoritmo

@@ -1,0 +1,27 @@
+algoritmo "ESTRUTURA_DE_REPETICAO"
+
+var
+N,CONT,SOMA,MAIOR,MENOR:INTEIRO
+
+inicio
+    CONT<- 1
+    ENQUANTO (CONT <=5) FACA
+        ESCREVA("DIGITE O",CONT,"° VALOR:")
+        LEIA(N)
+        SOMA<-SOMA + N
+        SE(N>MAIOR)ENTAO
+           MAIOR<- N
+        FIMSE
+        SE (CONT=1) ENTAO
+            MENOR<- N
+        FIMSE
+        SE(MENOR>N)ENTAO
+           MENOR<- N
+        FIMSE
+        CONT<-CONT+1
+    FIMENQUANTO
+    ESCREVAL("RESULTADO DA:",SOMA)
+    ESCREVAL("ESSE É O MAIOR VALOR DIGITADO:",MAIOR)
+    ESCREVAL("ESSE É O MENOR VALOR DIGITADO:",MENOR)
+
+fimalgoritmo

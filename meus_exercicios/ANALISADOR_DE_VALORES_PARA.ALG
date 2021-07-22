@@ -1,0 +1,31 @@
+algoritmo "ANALISADOR_DE_VALORES_PARA"
+
+var
+   N,SOMA,MEDIA,Vpar,Vdiv:Real
+   CONT,NULO:INTEIRO
+inicio
+   Vdiv<-0
+   NULO<- 0
+   PARA CONT DE 1 ATE 5 FACA
+      ESCREVA("DIGITE O",CONT,"° VALOR: ")
+      LEIA(N)
+      SOMA<- SOMA+N
+      MEDIA<- SOMA/5
+      SE (N=0)ENTAO
+         NULO<-NULO+1
+      FIMSE
+      SE (N%2=0)ENTAO
+         Vpar<-Vpar+N
+      FIMSE
+      SE (N%5=0)ENTAO
+         Vdiv<-Vdiv+1
+      FIMSE
+   FIMPARA
+   ESCREVAL("A SOMA ENTRE OS VALORES E:",SOMA)
+   ESCREVAL("A MEDIA ENTRE OS VALORES E:",MEDIA)
+   ESCREVAL("VALORES DIVISIVEIS POR CINCO E :",Vdiv)
+   ESCREVAL("VALORES NULOS",NULO)
+   ESCREVAL("A SOMA DOS VALORES PARES E :",Vpar)
+
+   
+fimalgoritmo

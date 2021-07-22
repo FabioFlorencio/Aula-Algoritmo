@@ -1,0 +1,20 @@
+algoritmo "semnome"
+var
+N:INTEIRO
+R:CARACTERE
+
+FUNCAO ParOuImpar(V:INTEIRO):CARACTERE
+INICIO
+   SE (N%2=0)ENTAO
+       RETORNE "PAR"
+   SENAO
+      RETORNE "IMPAR"
+   FIMSE
+FIMFUNCAO
+inicio
+   ESCREVAL("DIGITE UM NUMERO")
+   LEIA(N)
+   R<-ParOuImpar(N)
+   ESCREVAL("O NUMERO",N," E UM VALOR ",R)
+
+fimalgoritmo
